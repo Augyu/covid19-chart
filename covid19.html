@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="covid19_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title>COVID-19 in United States</title>
+
+</head>
+<body>
+<div style="padding: 40px;background:#fdd0a2" class="jumbotron align-right">
+    <h1 class="text-center" style="margin:10px">COVID-19 in United States</h1>
+    <h3 style="margin:10px;color: #7f2704" >Why COVID-19?</h3>
+    <h5 style="margin:10px">The hottest topic in recent times and the topic most relevant to us is a coronavirus. With the increase in the number of coronavirus infections and the gradual increase in mortality, we decide to use this topic for it's really valuable and worth analyzing. We want to analyze some basic characteristics of coronavirus, including the susceptible crowd and the speed of propagation. To achieve better results in the analysis, we narrowed the scope and selected the United States as the target of the analysis.</h5>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <h3 class="text-center">COVID-19 Cases in U.S. by State</h3>
+            <svg id="map" class="map-size"></svg>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <h3 class="text-center">Cases/ Recovered/ Deaths Number</h3>
+            <canvas width="600" height="600" id="statesDetail"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <h3 class="text-center">THIS IS DESCRIPTION</h3>
+<!--            <canvas width="600" height="600" id="statesDetail"></canvas>-->
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <h3 class="text-center">Cumulative Cases By Date</h3>
+            <canvas id="trend"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <h3 class="text-center">Confirmed Cases by Sex</h3>
+            <canvas id="sex"></canvas>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <h3 class="text-center">Deaths Cases by Age</h3>
+            <div id="age"></div>
+        </div>
+    </div>
+</div>
+
+<!--    <div class="header">-->
+<!--        <h1 style="text-align:center">COVID-19 in U.S.</h1>-->
+<!--    </div>-->
+<!--    <p><A HREF="data_description.html">Data</A></p>-->
+
+<!--    <p style="text-align:center">Map</p>-->
+
+<!--    <div height="20">-->
+<!--        <section class="slidecontainer, center">-->
+<!--            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">-->
+<!--            <select id="selectButton"></select>-->
+<!--        </section>-->
+<!--        <svg id="map" class="map-size"></svg>-->
+<!--    </div>-->
+
+<!--    <div class="w3-container">-->
+<!--        <table class="w3-table w3-centered">-->
+
+<!--            <tr>-->
+<!--                <td>Case number/ Cover Number/ Death Number(bar chart)</td>-->
+<!--                <td>Trend(line chart)</td>-->
+<!--            </tr>-->
+
+<!--            <tr>-->
+<!--                <td><img src="blank.png" alt="blank" width="150" height="300"></td>-->
+<!--                <td><canvas id="trend" width="70" height="30"></canvas></td>-->
+<!--            </tr>-->
+
+<!--            <tr>-->
+<!--                <td>Sex(doughnut chart)(confirmed)</td>-->
+<!--                <td>Age(bar chart)(death)</td>-->
+<!--            </tr>-->
+
+<!--            <tr>-->
+<!--                <td><div id="diagram"></div></td>-->
+<!--                <td><div id="age"></div></td>-->
+<!--            </tr>-->
+<!--        </table>-->
+
+
+<!--    </div>-->
+
+<script type="text/javascript" src="Covid19.js"></script>
+
+</body>
+</html>
